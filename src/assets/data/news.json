@@ -1,0 +1,30 @@
+[
+  {
+    "id": "news-001",
+    "date": "2026-06-15",
+    "category": "Defense",
+    "title": "Ph.D. Dissertation Defense Completed",
+    "summary": "Successfully defended Ph.D. thesis titled 'A Comparative Study on Betterment of Society through Corporate Social Responsibility Communication in Chhattisgarh and Jharkhand' at Kushabhau Thakre University."
+  },
+  {
+    "id": "news-002",
+    "date": "2025-11-20",
+    "category": "Publication",
+    "title": "Journal Paper Published in Strategic Communication",
+    "summary": "Paper on closing the CSR communication chasm published in the Journal of Strategic Communication & Public Governance."
+  },
+  {
+    "id": "news-003",
+    "date": "2025-08-10",
+    "category": "Conference",
+    "title": "Presented Paper at IAMCR Conference",
+    "summary": "Presented research findings on corporate disclosure versus community perception in central India."
+  },
+  {
+    "id": "news-004",
+    "date": "2024-12-05",
+    "category": "Award",
+    "title": "Best Paper Award in Development Communication",
+    "summary": "Received recognition for the Five-Pillar Framework presentation at the National Communication Research Symposium."
+  }
+]

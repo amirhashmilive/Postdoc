@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Collaboration | Sayed Amir Mustafa Hashmi</title>
+    <meta name="description" content="Get in touch with Sayed Amir Mustafa Hashmi for academic collaborations, postdoctoral opportunities, research inquiries, or speaking invitations.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <nav class="chap-nav">
+        <a href="index.html" data-fullname="Homepage"><i class="fas fa-home"></i> Home</a>
+        <span class="chap-nav-sep">|</span>
+        <a href="about.html" data-fullname="About Biography">About</a>
+        <a href="research-areas.html" data-fullname="Research Clusters">Research</a>
+        <a href="publications.html" data-fullname="Publications Hub">Publications</a>
+        <a href="phd-research.html" data-fullname="Ph.D. Dissertation">PhD Thesis</a>
+        <a href="projects.html" data-fullname="Research Projects">Projects</a>
+        <a href="fellowships.html" data-fullname="Postdoc Fellowships">Fellowships</a>
+        <a href="impact.html" data-fullname="Research Impact">Impact</a>
+        <a href="data-resources.html" data-fullname="Data & Open Resources">Data</a>
+        <a href="teaching.html" data-fullname="Teaching & Mentoring">Teaching</a>
+        <a href="news.html" data-fullname="News & Updates">News</a>
+        <a href="blog.html" data-fullname="Blog & Insights">Blog</a>
+        <a href="contact.html" class="active" data-fullname="Contact & Collaboration">Contact</a>
+    </nav>
+
+    <div class="slide-container">
+        
+        <!-- Slide 1: Contact Form & Info -->
+        <section class="slide" id="slide-1">
+            <div class="slide-content">
+                <h2 class="slide-subtitle">Get in Touch</h2>
+                <h1 class="slide-title">Contact & Collaboration</h1>
+
+                <div class="grid-2 mt-3">
+                    <!-- Contact Form -->
+                    <div class="glass-card hover-magnify glow-blue">
+                        <h3 class="neon-text-cg mb-2"><i class="fas fa-paper-plane"></i> Send a Message</h3>
+                        <form id="contact-form" novalidate>
+                            <!-- Honeypot -->
+                            <input type="text" name="website_url" id="website_url" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">Full Name *</label>
+                                <input type="text" id="contact-name" class="form-input" placeholder="Dr. / Prof. / Your Name" required>
+                                <div class="form-error">Name is required</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">Email Address *</label>
+                                <input type="email" id="contact-email" class="form-input" placeholder="name@institution.edu" required>
+                                <div class="form-error">Valid email is required</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject" class="form-label">Subject</label>
+                                <select id="contact-subject" class="form-select">
+                                    <option value="Postdoctoral Opportunity">Postdoctoral Opportunity</option>
+                                    <option value="Research Collaboration">Research Collaboration</option>
+                                    <option value="Data Sharing Request">Data Sharing Request</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">Message *</label>
+                                <textarea id="contact-message" class="form-textarea" placeholder="Your message or collaboration proposal..." required></textarea>
+                                <div class="form-error">Message must be at least 10 characters long</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-full"><i class="fas fa-paper-plane"></i> Send Inquiry</button>
+                        </form>
+                    </div>
+
+                    <!-- Direct Contact & Social Links -->
+                    <div class="glass-card hover-magnify glow-orange">
+                        <h3 class="neon-text-jh mb-2"><i class="fas fa-id-card"></i> Academic Details</h3>
+                        
+                        <div class="mb-2">
+                            <h4 class="text-accent mb-1"><i class="fas fa-envelope"></i> Email</h4>
+                            <p class="text-muted"><a href="mailto:sayed.hashmi@ktujmc.ac.in">sayed.hashmi@ktujmc.ac.in</a></p>
+                        </div>
+
+                        <div class="mb-2">
+                            <h4 class="text-accent mb-1"><i class="fas fa-university"></i> Institution</h4>
+                            <p class="text-muted">
+                                Kushabhau Thakre University of Journalism and Mass Communication<br>
+                                Raipur, Chhattisgarh, India
+                            </p>
+                        </div>
+
+                        <div class="mb-2">
+                            <h4 class="text-accent mb-1"><i class="fas fa-globe"></i> Academic Profiles</h4>
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap;" class="mt-1">
+                                <a href="https://orcid.org" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-orcid"></i> ORCID</a>
+                                <a href="https://scholar.google.com" target="_blank" class="btn btn-secondary btn-sm"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                                <a href="https://researchgate.net" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-researchgate"></i> ResearchGate</a>
+                                <a href="https://linkedin.com" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/charts.js"></script>
+    <script src="../js/slide-number.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/nav.js"></script>
+
+    <!-- Portfolio Specific Scripts -->
+    <script src="../js/contact-form.js"></script>
+</body>
+</html>

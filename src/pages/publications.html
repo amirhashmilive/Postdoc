@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications & Scholarly Work | Sayed Amir Mustafa Hashmi</title>
+    <meta name="description" content="Published journal articles, conference papers, book chapters, and doctoral research by Sayed Amir Mustafa Hashmi. Filter by category, year, or keyword. Export BibTeX/APA citations.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <nav class="chap-nav">
+        <a href="index.html" data-fullname="Homepage"><i class="fas fa-home"></i> Home</a>
+        <span class="chap-nav-sep">|</span>
+        <a href="about.html" data-fullname="About Biography">About</a>
+        <a href="research-areas.html" data-fullname="Research Clusters">Research</a>
+        <a href="publications.html" class="active" data-fullname="Publications Hub">Publications</a>
+        <a href="phd-research.html" data-fullname="Ph.D. Dissertation">PhD Thesis</a>
+        <a href="projects.html" data-fullname="Research Projects">Projects</a>
+        <a href="fellowships.html" data-fullname="Postdoc Fellowships">Fellowships</a>
+        <a href="impact.html" data-fullname="Research Impact">Impact</a>
+        <a href="data-resources.html" data-fullname="Data & Open Resources">Data</a>
+        <a href="teaching.html" data-fullname="Teaching & Mentoring">Teaching</a>
+        <a href="news.html" data-fullname="News & Updates">News</a>
+        <a href="blog.html" data-fullname="Blog & Insights">Blog</a>
+        <a href="contact.html" data-fullname="Contact & Collaboration">Contact</a>
+    </nav>
+
+    <div class="slide-container">
+        
+        <!-- Slide 1: Publications Hub -->
+        <section class="slide" id="slide-1">
+            <div class="slide-content">
+                <h2 class="slide-subtitle">Scholarly Outputs</h2>
+                <h1 class="slide-title">Publications Hub</h1>
+
+                <!-- Search and Filter Bar -->
+                <div class="filter-bar mx-auto mt-2">
+                    <input type="text" id="pub-search-input" class="search-input" placeholder="🔍 Search by title, author, journal, or keyword...">
+                    
+                    <div class="filter-tabs">
+                        <button class="filter-tab active" data-category="all">All (5)</button>
+                        <button class="filter-tab" data-category="thesis">Thesis</button>
+                        <button class="filter-tab" data-category="journal">Journal Articles</button>
+                        <button class="filter-tab" data-category="conference">Conference Papers</button>
+                        <button class="filter-tab" data-category="book-chapter">Book Chapters</button>
+                    </div>
+                </div>
+
+                <!-- Dynamic Container -->
+                <div id="publications-container" class="mt-2" style="max-width: 1000px; margin-left: auto; margin-right: auto; width: 100%;">
+                    <!-- Rendered by publication-filter.js -->
+                    <div class="glass-card text-center p-3">
+                        <p class="text-muted"><i class="fas fa-spinner fa-spin"></i> Loading publications...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/charts.js"></script>
+    <script src="../js/slide-number.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/nav.js"></script>
+
+    <!-- Portfolio Specific Scripts -->
+    <script src="../js/citation-export.js"></script>
+    <script src="../js/publication-filter.js"></script>
+</body>
+</html>

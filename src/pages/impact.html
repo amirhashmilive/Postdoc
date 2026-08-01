@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Impact & Metrics | Sayed Amir Mustafa Hashmi</title>
+    <meta name="description" content="Quantitative research impact metrics, comparative charts, statistical analysis, and societal outcomes of CSR communication research.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <nav class="chap-nav">
+        <a href="index.html" data-fullname="Homepage"><i class="fas fa-home"></i> Home</a>
+        <span class="chap-nav-sep">|</span>
+        <a href="about.html" data-fullname="About Biography">About</a>
+        <a href="research-areas.html" data-fullname="Research Clusters">Research</a>
+        <a href="publications.html" data-fullname="Publications Hub">Publications</a>
+        <a href="phd-research.html" data-fullname="Ph.D. Dissertation">PhD Thesis</a>
+        <a href="projects.html" data-fullname="Research Projects">Projects</a>
+        <a href="fellowships.html" data-fullname="Postdoc Fellowships">Fellowships</a>
+        <a href="impact.html" class="active" data-fullname="Research Impact">Impact</a>
+        <a href="data-resources.html" data-fullname="Data & Open Resources">Data</a>
+        <a href="teaching.html" data-fullname="Teaching & Mentoring">Teaching</a>
+        <a href="news.html" data-fullname="News & Updates">News</a>
+        <a href="blog.html" data-fullname="Blog & Insights">Blog</a>
+        <a href="contact.html" data-fullname="Contact & Collaboration">Contact</a>
+    </nav>
+
+    <div class="slide-container">
+        
+        <!-- Slide 1: Quantitative Metrics Chart -->
+        <section class="slide" id="slide-1">
+            <div class="slide-content text-center">
+                <h2 class="slide-subtitle">Comparative Empirical Analysis</h2>
+                <h1 class="slide-title">State Efficacy Comparison</h1>
+                <p class="text-muted mb-2">Communication Efficacy Scores & Dialect Utilization across Chhattisgarh vs Jharkhand</p>
+
+                <div class="glass-card max-w-800 mx-auto">
+                    <div class="chart-container">
+                        <canvas id="impactChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Channel Effectiveness Breakdown -->
+        <section class="slide" id="slide-2">
+            <div class="slide-content text-center">
+                <h2 class="slide-subtitle">Channel Efficacy Analysis</h2>
+                <h1 class="slide-title">Communication Channel Retention</h1>
+
+                <div class="glass-card max-w-800 mx-auto mt-2">
+                    <div class="chart-container">
+                        <canvas id="channelChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/charts.js"></script>
+    <script src="../js/slide-number.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/nav.js"></script>
+
+    <!-- Page Specific Chart Setup -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            window.initCharts = function() {
+                const colors = getChartColors();
+
+                // Chart 1: State Efficacy Comparison
+                const ctx1 = document.getElementById('impactChart');
+                if (ctx1) {
+                    if (chartInstances['impactChart']) chartInstances['impactChart'].destroy();
+                    chartInstances['impactChart'] = new Chart(ctx1, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Local Dialect Usage (%)', 'Beneficiary Trust (%)', 'Efficacy Score (out of 4)'],
+                            datasets: [
+                                {
+                                    label: 'Chhattisgarh (CG)',
+                                    data: [80, 74, 2.67],
+                                    backgroundColor: colors.cgPrimary,
+                                    borderRadius: 6
+                                },
+                                {
+                                    label: 'Jharkhand (JH)',
+                                    data: [54, 48, 2.14],
+                                    backgroundColor: colors.jhPrimary,
+                                    borderRadius: 6
+                                }
+                            ]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { labels: { color: colors.textColor, font: { family: 'Inter' } } }
+                            },
+                            scales: {
+                                x: { ticks: { color: colors.textColor }, grid: { color: colors.gridColor } },
+                                y: { ticks: { color: colors.textColor }, grid: { color: colors.gridColor } }
+                            }
+                        }
+                    });
+                }
+
+                // Chart 2: Channel Retention
+                const ctx2 = document.getElementById('channelChart');
+                if (ctx2) {
+                    if (chartInstances['channelChart']) chartInstances['channelChart'].destroy();
+                    chartInstances['channelChart'] = new Chart(ctx2, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Verbal / Gramsabha Meetings (78%)', 'Audio-Visual Extensions (56%)', 'Printed Pamphlets (23%)', 'Electronic Media (12%)'],
+                            datasets: [{
+                                data: [78, 56, 23, 12],
+                                backgroundColor: [colors.cgPrimary, colors.success, colors.jhPrimary, colors.warning]
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { labels: { color: colors.textColor, font: { family: 'Inter' } } }
+                            }
+                        }
+                    });
+                }
+            };
+
+            window.initCharts();
+        });
+    </script>
+</body>
+</html>

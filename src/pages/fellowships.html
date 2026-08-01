@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postdoctoral Fellowships & Applications | Sayed Amir Mustafa Hashmi</title>
+    <meta name="description" content="Tracker for postdoctoral fellowship applications (Leverhulme, Humboldt, MSCA, NUS), target research groups, and application checklist.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <nav class="chap-nav">
+        <a href="index.html" data-fullname="Homepage"><i class="fas fa-home"></i> Home</a>
+        <span class="chap-nav-sep">|</span>
+        <a href="about.html" data-fullname="About Biography">About</a>
+        <a href="research-areas.html" data-fullname="Research Clusters">Research</a>
+        <a href="publications.html" data-fullname="Publications Hub">Publications</a>
+        <a href="phd-research.html" data-fullname="Ph.D. Dissertation">PhD Thesis</a>
+        <a href="projects.html" data-fullname="Research Projects">Projects</a>
+        <a href="fellowships.html" class="active" data-fullname="Postdoc Fellowships">Fellowships</a>
+        <a href="impact.html" data-fullname="Research Impact">Impact</a>
+        <a href="data-resources.html" data-fullname="Data & Open Resources">Data</a>
+        <a href="teaching.html" data-fullname="Teaching & Mentoring">Teaching</a>
+        <a href="news.html" data-fullname="News & Updates">News</a>
+        <a href="blog.html" data-fullname="Blog & Insights">Blog</a>
+        <a href="contact.html" data-fullname="Contact & Collaboration">Contact</a>
+    </nav>
+
+    <div class="slide-container">
+        
+        <!-- Slide 1: Fellowship Tracker Table -->
+        <section class="slide" id="slide-1">
+            <div class="slide-content">
+                <h2 class="slide-subtitle">International Postdoc Campaign</h2>
+                <h1 class="slide-title">Fellowship Applications</h1>
+
+                <div class="glass-card max-w-1200 mx-auto mt-2 p-0" style="overflow: hidden;">
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Institution / Department</th>
+                                    <th>Fellowship Scheme</th>
+                                    <th>Research Alignment</th>
+                                    <th>Status</th>
+                                    <th>Deadline</th>
+                                </tr>
+                            </thead>
+                            <tbody id="fellowship-table-body">
+                                <!-- Populated by fellowship-tracker.js -->
+                                <tr>
+                                    <td colspan="5" class="text-center text-muted p-3"><i class="fas fa-spinner fa-spin"></i> Loading application data...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Target Universities & Checklist -->
+        <section class="slide" id="slide-2">
+            <div class="slide-content">
+                <h2 class="slide-subtitle">Strategy & Preparation</h2>
+                <h1 class="slide-title">Target Research Groups</h1>
+                <div class="grid-2 mt-3">
+                    <div class="glass-card hover-magnify glow-blue">
+                        <h3 class="neon-text-cg mb-1"><i class="fas fa-university"></i> Priority Institutional Targets</h3>
+                        <ul class="text-muted" style="line-height: 1.8;">
+                            <li><strong>Cambridge University:</strong> Centre for Development Studies</li>
+                            <li><strong>LMU Munich:</strong> Department of Communication & Media</li>
+                            <li><strong>Erasmus Rotterdam:</strong> Media & Communication Dept</li>
+                            <li><strong>NUS Singapore:</strong> Communications and New Media</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card hover-magnify glow-green">
+                        <h3 style="color: var(--success-color);" class="mb-1"><i class="fas fa-tasks"></i> Dossier Checklist</h3>
+                        <ul class="text-muted" style="line-height: 1.8; list-style: none;">
+                            <li><i class="fas fa-check-square text-accent"></i> Academic CV & Publication Record</li>
+                            <li><i class="fas fa-check-square text-accent"></i> 3,000-Word Postdoctoral Research Proposal</li>
+                            <li><i class="fas fa-check-square text-accent"></i> Sample Articles & BibTeX Dossier</li>
+                            <li><i class="fas fa-check-square text-accent"></i> Host Supervisor Endorsements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/charts.js"></script>
+    <script src="../js/slide-number.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/nav.js"></script>
+
+    <!-- Portfolio Specific Scripts -->
+    <script src="../js/fellowship-tracker.js"></script>
+</body>
+</html>

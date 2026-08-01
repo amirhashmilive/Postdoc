@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fel-001",
+    "university": "University of Cambridge",
+    "program": "Leverhulme Early Career Fellowship",
+    "department": "Department of Sociology / Centre for Development Studies",
+    "status": "applied",
+    "deadline": "2026-03-15",
+    "focus": "Strategic Sustainability Communication & Governance in Emerging Markets"
+  },
+  {
+    "id": "fel-002",
+    "university": "Alexander von Humboldt Foundation",
+    "program": "Humboldt Research Fellowship for Postdoctoral Researchers",
+    "department": "Department of Communication, Ludwig Maximilian University of Munich",
+    "status": "under-review",
+    "deadline": "2026-01-30",
+    "focus": "ESG Transparency & Stakeholder Trust Frameworks"
+  },
+  {
+    "id": "fel-003",
+    "university": "European Commission",
+    "program": "Marie Skłodowska-Curie Actions (MSCA) Postdoctoral Fellowship",
+    "department": "Erasmus School of History, Culture and Communication, Erasmus University Rotterdam",
+    "status": "under-review",
+    "deadline": "2025-09-11",
+    "focus": "AI & Multilingual Development Communication in Mining Belts"
+  },
+  {
+    "id": "fel-004",
+    "university": "National University of Singapore",
+    "program": "NUS Development Communication Postdoctoral Fellowship",
+    "department": "Department of Communications and New Media",
+    "status": "applied",
+    "deadline": "2026-04-01",
+    "focus": "CSR Disclosure & Community Impact Assessment in South Asia"
+  }
+]

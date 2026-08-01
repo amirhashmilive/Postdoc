@@ -1,0 +1,47 @@
+[
+  {
+    "id": "proj-001",
+    "status": "completed",
+    "title": "CSR Communication in Mining Regions",
+    "subtitle": "5-Year Empirical Comparative Study across Chhattisgarh & Jharkhand",
+    "period": "2018 - 2023",
+    "description": "Comprehensive comparative study evaluating CSR communication effectiveness, channel preference, and community trust across 10 mining districts. Involved 400 beneficiary surveys and 40 in-depth stakeholder interviews.",
+    "impact": "Identified critical 26-point local dialect gap; established that verbal community meetings outperform printed reports by 3.4x in awareness creation."
+  },
+  {
+    "id": "proj-002",
+    "status": "completed",
+    "title": "CSR Communication Effectiveness in Tribal Communities",
+    "subtitle": "Fieldwork Analysis across 10 Districts",
+    "period": "2021 - 2024",
+    "description": "Specialized fieldwork investigation into indigenous linguistic barriers in corporate social disclosure, evaluating education and healthcare interventions.",
+    "impact": "Formulated recommendations for local dialect integration in CSR extension work."
+  },
+  {
+    "id": "proj-003",
+    "status": "completed",
+    "title": "Five-Pillar Framework Development",
+    "subtitle": "Normative Analytical Model",
+    "period": "2022 - 2025",
+    "description": "Developed a comprehensive evaluation model categorizing CSR communication governance into Strategy, Participation, Transparency, Feedback, and Impact Assessment.",
+    "impact": "Published in International Communication Gazette & Governance Review."
+  },
+  {
+    "id": "proj-004",
+    "status": "ongoing",
+    "title": "ESG Communication Framework",
+    "subtitle": "Global Corporate Standards & Local Community Perceptions",
+    "period": "2025 - Present",
+    "description": "Investigating alignment between international ESG disclosure frameworks (GRI, SASB) and grass-root community expectations in developing nations.",
+    "impact": "Ongoing postdoctoral proposal preparation."
+  },
+  {
+    "id": "proj-005",
+    "status": "planned",
+    "title": "AI for Sustainability Communication",
+    "subtitle": "Automated Transparency & Dialect Translation in Development Communication",
+    "period": "Planned 2026",
+    "description": "Proposed project testing generative AI models for translating technical ESG reports into accessible indigenous audio-visual formats.",
+    "impact": "Targeting Marie Skłodowska-Curie Actions / Humboldt Postdoctoral Fellowships."
+  }
+]

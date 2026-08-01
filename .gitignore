@@ -1,0 +1,22 @@
+# .gitignore
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Agent working files (keep templates, ignore live state)
+.agent/current-task.md
+.agent/project-memory.md
+
+# Temporary files
+*.tmp
+*.bak
+*.log

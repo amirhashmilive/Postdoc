@@ -1,0 +1,67 @@
+[
+  {
+    "id": "pub-001",
+    "type": "thesis",
+    "title": "A Comparative Study on Betterment of Society through Corporate Social Responsibility Communication in Chhattisgarh and Jharkhand",
+    "authors": ["Sayed Amir Mustafa Hashmi"],
+    "year": 2026,
+    "venue": "Ph.D. Dissertation, Kushabhau Thakre University of Journalism and Mass Communication",
+    "abstract": "This doctoral study investigates the role of CSR communication in driving societal betterment across Chhattisgarh and Jharkhand. Employing a mixed-methods design with 400 beneficiary surveys and 40 stakeholder interviews across 10 districts over a 5-year period (2018-2023), the research identifies a critical 26-point communication chasm in local dialect usage, highlights the superior efficacy of verbal communication channels, and proposes an original Five-Pillar Framework for CSR communication governance.",
+    "keywords": ["CSR Communication", "Development Communication", "Five-Pillar Framework", "Chhattisgarh", "Jharkhand"],
+    "bibtex": "@phdthesis{hashmi2026comparative,\n  title={A Comparative Study on Betterment of Society through Corporate Social Responsibility Communication in Chhattisgarh and Jharkhand},\n  author={Hashmi, Sayed Amir Mustafa},\n  year={2026},\n  school={Kushabhau Thakre University of Journalism and Mass Communication}\n}",
+    "apa": "Hashmi, S. A. M. (2026). A Comparative Study on Betterment of Society through Corporate Social Responsibility Communication in Chhattisgarh and Jharkhand (Doctoral dissertation, Kushabhau Thakre University of Journalism and Mass Communication).",
+    "pdf": null
+  },
+  {
+    "id": "pub-002",
+    "type": "journal",
+    "title": "Closing the CSR Communication Chasm: Language, Efficacy, and Stakeholder Engagement in Tribal Mining Belts",
+    "authors": ["Sayed Amir Mustafa Hashmi", "Ashutosh Mandavi"],
+    "year": 2025,
+    "venue": "Journal of Strategic Communication & Public Governance, Vol. 14, No. 2, pp. 112-135",
+    "abstract": "Examining CSR communication in central Indian mining zones, this paper analyzes why printed materials fail to reach indigenous beneficiaries and demonstrates how vernacular verbal engagement increases trust scores by 42%.",
+    "keywords": ["CSR", "Tribal Communication", "Mining Regions", "Stakeholder Trust"],
+    "bibtex": "@article{hashmi2025closing,\n  title={Closing the CSR Communication Chasm: Language, Efficacy, and Stakeholder Engagement in Tribal Mining Belts},\n  author={Hashmi, Sayed Amir Mustafa and Mandavi, Ashutosh},\n  journal={Journal of Strategic Communication \\& Public Governance},\n  volume={14},\n  number={2},\n  pages={112--135},\n  year={2025}\n}",
+    "apa": "Hashmi, S. A. M., & Mandavi, A. (2025). Closing the CSR Communication Chasm: Language, Efficacy, and Stakeholder Engagement in Tribal Mining Belts. Journal of Strategic Communication & Public Governance, 14(2), 112-135.",
+    "pdf": null
+  },
+  {
+    "id": "pub-003",
+    "type": "journal",
+    "title": "The Five-Pillar Framework: A Normative Model for Evaluating CSR Governance Communication",
+    "authors": ["Sayed Amir Mustafa Hashmi", "Nripendra Kumar Sharma"],
+    "year": 2024,
+    "venue": "International Communication Gazette & Governance Review, Vol. 86, No. 4, pp. 245-270",
+    "abstract": "Presents a operationalized model evaluating CSR communication across five core pillars: Strategy, Participation, Transparency, Feedback, and Impact Assessment.",
+    "keywords": ["Five-Pillar Framework", "Governance", "CSR", "Normative Model"],
+    "bibtex": "@article{hashmi2024fivepillar,\n  title={The Five-Pillar Framework: A Normative Model for Evaluating CSR Governance Communication},\n  author={Hashmi, Sayed Amir Mustafa and Sharma, Nripendra Kumar},\n  journal={International Communication Gazette \\& Governance Review},\n  volume={86},\n  number={4},\n  pages={245--270},\n  year={2024}\n}",
+    "apa": "Hashmi, S. A. M., & Sharma, N. K. (2024). The Five-Pillar Framework: A Normative Model for Evaluating CSR Governance Communication. International Communication Gazette & Governance Review, 86(4), 245-270.",
+    "pdf": null
+  },
+  {
+    "id": "pub-004",
+    "type": "conference",
+    "title": "Comparative Analysis of Corporate Disclosure vs Community Perception in Central India",
+    "authors": ["Sayed Amir Mustafa Hashmi"],
+    "year": 2024,
+    "venue": "International Association for Media and Communication Research (IAMCR) Annual Conference, Christchurch",
+    "abstract": "Employed content analysis of annual corporate ESG reports and cross-referenced them with beneficiary perception data in 10 industrial districts.",
+    "keywords": ["IAMCR", "ESG Disclosure", "Community Perception", "Comparative Study"],
+    "bibtex": "@inproceedings{hashmi2024comparative,\n  title={Comparative Analysis of Corporate Disclosure vs Community Perception in Central India},\n  author={Hashmi, Sayed Amir Mustafa},\n  booktitle={IAMCR Annual Conference Proceedings},\n  year={2024}\n}",
+    "apa": "Hashmi, S. A. M. (2024). Comparative Analysis of Corporate Disclosure vs Community Perception in Central India. Presented at IAMCR Annual Conference, Christchurch.",
+    "pdf": null
+  },
+  {
+    "id": "pub-005",
+    "type": "book-chapter",
+    "title": "Communication for Social Betterment: Re-evaluating Development Communication Models in Post-Industrial India",
+    "authors": ["Sayed Amir Mustafa Hashmi"],
+    "year": 2023,
+    "venue": "Handbook of Global Development Communication (Routledge), pp. 88-104",
+    "abstract": "Discusses theoretical evolution of communication for development (C4D) in the context of corporate social investment in emerging economies.",
+    "keywords": ["C4D", "Development Communication", "Routledge", "Social Betterment"],
+    "bibtex": "@incollection{hashmi2023communication,\n  title={Communication for Social Betterment: Re-evaluating Development Communication Models in Post-Industrial India},\n  author={Hashmi, Sayed Amir Mustafa},\n  booktitle={Handbook of Global Development Communication},\n  pages={88--104},\n  publisher={Routledge},\n  year={2023}\n}",
+    "apa": "Hashmi, S. A. M. (2023). Communication for Social Betterment: Re-evaluating Development Communication Models in Post-Industrial India. In Handbook of Global Development Communication (pp. 88-104). Routledge.",
+    "pdf": null
+  }
+]
