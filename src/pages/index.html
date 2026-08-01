@@ -3,152 +3,366 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sayed Amir Mustafa Hashmi | Academic Portfolio & Research</title>
-    <meta name="description" content="Academic portfolio of Sayed Amir Mustafa Hashmi, Ph.D. Researcher in Strategic Communication, CSR, Sustainability Communication, and Development Communication.">
-    <meta name="keywords" content="Sayed Amir Mustafa Hashmi, CSR Communication, Strategic Communication, Sustainability Communication, Development Communication, Five-Pillar Framework, PhD Research">
-    
+    <title>Sayed Amir Mustafa Hashmi | Ph.D. Researcher — CSR & Strategic Communication</title>
+    <meta name="description" content="Academic portfolio of Dr. Sayed Amir Mustafa Hashmi — Ph.D. researcher in Strategic Communication, CSR, Sustainability Communication, and Development Communication. Specialist in tribal community engagement and the Five-Pillar Framework.">
+    <meta name="keywords" content="Sayed Amir Mustafa Hashmi, CSR Communication, Strategic Communication, Sustainability Communication, Development Communication, Five-Pillar Framework, PhD Research, Chhattisgarh, Jharkhand">
+    <meta name="author" content="Sayed Amir Mustafa Hashmi">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sayed Amir Mustafa Hashmi | Academic Portfolio">
+    <meta property="og:description" content="Ph.D. researcher in CSR Communication, Sustainability, and Development Communication. Creator of the Five-Pillar Framework.">
+    <meta property="og:type" content="website">
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/dark-mode.css">
     <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        /* ── Page-specific hero enhancements ─── */
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(34,211,245,0.1);
+            border: 1px solid rgba(34,211,245,0.25);
+            border-radius: 999px;
+            padding: 6px 16px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent-cg);
+            margin-bottom: 1.25rem;
+        }
+        .hero-eyebrow::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--accent-cg);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--accent-cg);
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        .hero-institution {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 1.2rem;
+            font-weight: 500;
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin: 1.2rem 0;
+        }
+        .hero-tag {
+            background: var(--bg-glass);
+            border: 1px solid var(--bg-glass-border);
+            border-radius: 999px;
+            padding: 4px 14px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            backdrop-filter: blur(8px);
+            letter-spacing: 0.02em;
+        }
+
+        /* Stat section gradient divider */
+        .stat-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-cg), var(--accent-jh), transparent);
+            margin: 2.5rem 0;
+            opacity: 0.4;
+        }
+
+        /* Research highlight icons */
+        .highlight-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .icon-blue { background: rgba(34,211,245,0.12); border: 1px solid rgba(34,211,245,0.2); }
+        .icon-orange { background: rgba(255,107,53,0.12); border: 1px solid rgba(255,107,53,0.2); }
+        .icon-green { background: rgba(0,230,118,0.12); border: 1px solid rgba(0,230,118,0.2); }
+
+        /* Big number callout */
+        .callout-number {
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -0.04em;
+            color: var(--accent-cg);
+            text-shadow: var(--accent-glow-cg);
+        }
+
+        /* Scroll hint */
+        .scroll-hint {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-muted);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            animation: scrollBounce 2s ease-in-out infinite;
+        }
+        @keyframes scrollBounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.6; }
+            50% { transform: translateX(-50%) translateY(6px); opacity: 1; }
+        }
+        .scroll-hint i { font-size: 1rem; }
+    </style>
 </head>
 <body>
 
-    <!-- Floating Navigation Bar -->
-    <nav class="chap-nav">
+    <!-- ── Navigation ─── -->
+    <nav class="chap-nav" id="main-nav">
         <a href="index.html" class="active" data-fullname="Homepage"><i class="fas fa-home"></i> Home</a>
-        <span class="chap-nav-sep">|</span>
-        <a href="about.html" data-fullname="About Biography">About</a>
+        <span class="chap-nav-sep">·</span>
+        <a href="about.html" data-fullname="About & Biography">About</a>
         <a href="research-areas.html" data-fullname="Research Clusters">Research</a>
-        <a href="publications.html" data-fullname="Publications Hub">Publications</a>
-        <a href="phd-research.html" data-fullname="Ph.D. Dissertation">PhD Thesis</a>
+        <a href="publications.html" data-fullname="Publications Hub">Papers</a>
+        <a href="phd-research.html" data-fullname="Ph.D. Dissertation">PhD</a>
         <a href="projects.html" data-fullname="Research Projects">Projects</a>
-        <a href="fellowships.html" data-fullname="Postdoc Fellowships">Fellowships</a>
-        <a href="impact.html" data-fullname="Research Impact">Impact</a>
-        <a href="data-resources.html" data-fullname="Data & Open Resources">Data</a>
+        <a href="fellowships.html" data-fullname="Postdoc Applications">Fellowships</a>
+        <a href="impact.html" data-fullname="Research Impact & Charts">Impact</a>
+        <a href="data-resources.html" data-fullname="Open Data Resources">Data</a>
         <a href="teaching.html" data-fullname="Teaching & Mentoring">Teaching</a>
-        <a href="news.html" data-fullname="News & Updates">News</a>
+        <a href="news.html" data-fullname="News & Announcements">News</a>
         <a href="blog.html" data-fullname="Blog & Insights">Blog</a>
-        <a href="contact.html" data-fullname="Contact & Collaboration">Contact</a>
+        <a href="contact.html" data-fullname="Contact & Collaborate">Contact</a>
     </nav>
 
-    <!-- Main Full-Screen Scroll Snap Container -->
+    <!-- ── Slide Container ─── -->
     <div class="slide-container">
-        
-        <!-- Slide 1: Hero Section -->
+
+        <!-- ══ SLIDE 1: Hero ══ -->
         <section class="slide" id="slide-1">
             <div class="slide-content text-center">
-                <h2 class="slide-subtitle text-accent">Ph.D. in Mass Communication | Researcher</h2>
-                <h1 class="slide-title neon-text-cg">Sayed Amir Mustafa Hashmi</h1>
-                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 1.5rem;" class="text-muted">
-                    Strategic Communication • Corporate Social Responsibility (CSR) • Sustainability Communication • Development Communication
-                </p>
-                <p style="font-size: 0.95rem; color: var(--text-muted);">
-                    <i class="fas fa-university"></i> Kushabhau Thakre University of Journalism and Mass Communication, India
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="about.html" class="btn btn-primary"><i class="fas fa-file-download"></i> Download CV</a>
-                    <a href="publications.html" class="btn btn-secondary"><i class="fas fa-book"></i> Publications</a>
-                    <a href="phd-research.html" class="btn btn-secondary"><i class="fas fa-microscope"></i> Research</a>
-                    <a href="contact.html" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact</a>
+                <div class="hero-eyebrow slide-anim">
+                    Ph.D. Researcher · CSR & Development Communication
                 </div>
+
+                <h1 class="hero-name slide-anim">
+                    Sayed Amir<br>Mustafa Hashmi
+                </h1>
+
+                <div class="hero-tags slide-anim">
+                    <span class="hero-tag">Strategic Communication</span>
+                    <span class="hero-tag">Corporate Social Responsibility</span>
+                    <span class="hero-tag">Sustainability Communication</span>
+                    <span class="hero-tag">Development Communication</span>
+                    <span class="hero-tag">Five-Pillar Framework</span>
+                </div>
+
+                <div class="hero-institution slide-anim">
+                    <i class="fas fa-university" style="color: var(--accent-cg);"></i>
+                    Kushabhau Thakre University of Journalism and Mass Communication, Raipur, India
+                </div>
+
+                <div class="hero-buttons slide-anim">
+                    <a href="phd-research.html" class="btn btn-primary">
+                        <i class="fas fa-microscope"></i> View My Research
+                    </a>
+                    <a href="publications.html" class="btn btn-secondary">
+                        <i class="fas fa-book-open"></i> Publications
+                    </a>
+                    <a href="fellowships.html" class="btn btn-secondary">
+                        <i class="fas fa-globe"></i> Fellowships
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Collaborate
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-hint">
+                <i class="fas fa-chevron-down"></i>
+                Scroll to explore
             </div>
         </section>
 
-        <!-- Slide 2: Research Statement -->
+        <!-- ══ SLIDE 2: Research Statement ══ -->
         <section class="slide" id="slide-2">
             <div class="slide-content">
-                <h2 class="slide-subtitle">Overview & Vision</h2>
-                <h1 class="slide-title">Research Statement</h1>
-                <div class="glass-card max-w-800 mx-auto hover-magnify glow-blue">
-                    <p style="font-size: 1.1rem; line-height: 1.8;">
-                        My research examines how strategic communication influences corporate social responsibility, stakeholder engagement, sustainability, and community development. I employ mixed-methods research to investigate the effectiveness of CSR communication, ESG disclosure, public trust, and communication for social betterment.
-                    </p>
-                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 0;">
-                        My long-term research aims to develop evidence-based communication frameworks that support sustainable corporate governance and inclusive development across emerging economies and tribal industrial corridors.
-                    </p>
+                <p class="slide-subtitle slide-anim">Overview & Vision</p>
+                <h2 class="slide-title slide-anim">Research Statement</h2>
+
+                <div class="grid-2 mt-3">
+                    <div class="glass-card glow-blue slide-anim">
+                        <div class="highlight-icon icon-blue">
+                            <i class="fas fa-bullseye" style="color: var(--accent-cg);"></i>
+                        </div>
+                        <h3 class="mb-2" style="color: var(--text-main);">Focus Areas</h3>
+                        <p class="text-muted" style="font-size: 0.92rem; line-height: 1.8;">
+                            My research examines how <strong style="color: var(--text-main);">strategic communication</strong> shapes corporate social responsibility, stakeholder trust, ESG disclosure, and community development outcomes — particularly in central India's tribal mining corridors.
+                        </p>
+                    </div>
+                    <div class="glass-card glow-orange slide-anim">
+                        <div class="highlight-icon icon-orange">
+                            <i class="fas fa-compass" style="color: var(--accent-jh);"></i>
+                        </div>
+                        <h3 class="mb-2" style="color: var(--text-main);">Long-Term Vision</h3>
+                        <p class="text-muted" style="font-size: 0.92rem; line-height: 1.8;">
+                            I develop <strong style="color: var(--text-main);">evidence-based communication frameworks</strong> supporting sustainable corporate governance and inclusive development in emerging economies — bridging institutional disclosures with grassroots beneficiary understanding.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 3: Quick Stats -->
+        <!-- ══ SLIDE 3: Key Findings Callout ══ -->
         <section class="slide" id="slide-3">
-            <div class="slide-content">
-                <h2 class="slide-subtitle">Empirical Rigor</h2>
-                <h1 class="slide-title">Research at a Glance</h1>
-                <div class="grid-3 mt-3">
-                    <div class="glass-card stat-card hover-magnify glow-cyan">
-                        <div class="stat-number">5 Years</div>
-                        <div class="stat-label">CSR Field Data Analyzed (2018–2023)</div>
-                    </div>
-                    <div class="glass-card stat-card hover-magnify glow-blue">
-                        <div class="stat-number">400+</div>
-                        <div class="stat-label">Beneficiary Surveys Conducted</div>
-                    </div>
-                    <div class="glass-card stat-card hover-magnify glow-orange">
-                        <div class="stat-number">40+</div>
-                        <div class="stat-label">In-Depth Stakeholder Interviews</div>
-                    </div>
-                    <div class="glass-card stat-card hover-magnify glow-purple">
-                        <div class="stat-number">10</div>
-                        <div class="stat-label">Districts Covered in Mining Belts</div>
-                    </div>
-                    <div class="glass-card stat-card hover-magnify glow-green">
-                        <div class="stat-number">2 States</div>
-                        <div class="stat-label">Chhattisgarh & Jharkhand Compared</div>
-                    </div>
-                    <div class="glass-card stat-card hover-magnify glow-cyan">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Key Development Sectors Investigated</div>
+            <div class="slide-content text-center">
+                <p class="slide-subtitle slide-anim">Doctoral Research Discovery</p>
+                <h2 class="slide-title slide-anim">The Communication Chasm</h2>
+
+                <div class="glass-card max-w-800 mx-auto mt-3 slide-anim" style="padding: 3rem;">
+                    <div class="grid-2" style="gap: 3rem; align-items: center;">
+                        <div>
+                            <div class="callout-number">26%</div>
+                            <p style="font-size: 1.1rem; font-weight: 700; margin-top: 0.5rem; color: var(--text-main);">Language Gap Identified</p>
+                            <p class="text-muted" style="font-size: 0.88rem; line-height: 1.7; margin-top: 0.5rem;">
+                                80% local dialect use in <strong style="color: var(--accent-cg);">Chhattisgarh</strong> vs only 54% in <strong style="color: var(--accent-jh);">Jharkhand</strong> — a 26-point disparity that directly drives community trust and CSR awareness deficits.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="callout-number" style="color: var(--accent-jh); text-shadow: var(--accent-glow-jh);">3.4×</div>
+                            <p style="font-size: 1.1rem; font-weight: 700; margin-top: 0.5rem; color: var(--text-main);">Verbal vs. Printed Media</p>
+                            <p class="text-muted" style="font-size: 0.88rem; line-height: 1.7; margin-top: 0.5rem;">
+                                Gramsabha community meetings outperform printed pamphlets by <strong style="color: var(--accent-jh);">3.4× in information retention</strong> among tribal beneficiaries across 10 studied districts.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 4: Key Research Highlights -->
+        <!-- ══ SLIDE 4: Research Stats ══ -->
         <section class="slide" id="slide-4">
             <div class="slide-content">
-                <h2 class="slide-subtitle">Core Contributions</h2>
-                <h1 class="slide-title">Research Highlights</h1>
-                <div class="grid-3 mt-2">
-                    <div class="glass-card hover-magnify">
-                        <h3 class="neon-text-cg mb-1"><i class="fas fa-comments"></i> 26% Language Chasm</h3>
-                        <p class="text-muted">
-                            Identified a 26-point gap in local dialect usage between Chhattisgarh (80%) and Jharkhand (54%), explaining disparities in CSR awareness.
-                        </p>
+                <p class="slide-subtitle slide-anim">Empirical Rigor</p>
+                <h2 class="slide-title slide-anim">Research at a Glance</h2>
+
+                <div class="grid-3 mt-3">
+                    <div class="glass-card stat-card glow-cyan slide-anim">
+                        <div class="stat-number">5 Yrs</div>
+                        <div class="stat-label">Longitudinal CSR Data<br>(2018–2023)</div>
                     </div>
-                    <div class="glass-card hover-magnify">
-                        <h3 class="neon-text-jh mb-1"><i class="fas fa-sitemap"></i> Five-Pillar Model</h3>
-                        <p class="text-muted">
-                            Formulated an original normative framework categorizing CSR communication into Strategy, Participation, Transparency, Feedback, and Impact.
-                        </p>
+                    <div class="glass-card stat-card glow-blue slide-anim">
+                        <div class="stat-number">400+</div>
+                        <div class="stat-label">Beneficiary Surveys<br>Conducted</div>
                     </div>
-                    <div class="glass-card hover-magnify">
-                        <h3 style="color: var(--success-color);" class="mb-1"><i class="fas fa-bullhorn"></i> Verbal vs Print Efficacy</h3>
-                        <p class="text-muted">
-                            Demonstrated that interpersonal and verbal community meetings outperform printed reports by 3.4x in tribal beneficiary trust.
-                        </p>
+                    <div class="glass-card stat-card glow-orange slide-anim">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-label">Stakeholder In-Depth<br>Interviews</div>
+                    </div>
+                    <div class="glass-card stat-card glow-purple slide-anim">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">Mining Belt Districts<br>Studied</div>
+                    </div>
+                    <div class="glass-card stat-card glow-green slide-anim">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">States Compared<br>CG & JH</div>
+                    </div>
+                    <div class="glass-card stat-card glow-cyan slide-anim">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Pillars in Original<br>Governance Framework</div>
                     </div>
                 </div>
             </div>
         </section>
 
-    </div>
+        <!-- ══ SLIDE 5: Five-Pillar Showcase ══ -->
+        <section class="slide" id="slide-5">
+            <div class="slide-content">
+                <p class="slide-subtitle slide-anim">Original Theoretical Contribution</p>
+                <h2 class="slide-title slide-anim">The Five-Pillar Framework</h2>
+                <p class="text-muted text-center slide-anim" style="max-width: 700px; margin: 0 auto 2.5rem;">
+                    A normative model for evaluating CSR communication governance — developed from 5 years of multi-state empirical fieldwork.
+                </p>
 
-    <!-- Core Scripts -->
+                <div class="grid-5 slide-anim">
+                    <div class="glass-card text-center glow-blue" style="padding: 1.5rem 1rem;">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">🎯</div>
+                        <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">Pillar I</div>
+                        <h3 class="neon-text-cg" style="font-size: 1rem;">Strategy</h3>
+                        <p class="text-muted mt-1" style="font-size: 0.78rem; line-height: 1.5;">Aligning corporate goals with community development needs</p>
+                    </div>
+                    <div class="glass-card text-center glow-cyan" style="padding: 1.5rem 1rem;">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">🤝</div>
+                        <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">Pillar II</div>
+                        <h3 class="neon-text-cg" style="font-size: 1rem;">Participation</h3>
+                        <p class="text-muted mt-1" style="font-size: 0.78rem; line-height: 1.5;">Gramsabha dialogue & co-creation of project design</p>
+                    </div>
+                    <div class="glass-card text-center glow-green" style="padding: 1.5rem 1rem;">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">🔍</div>
+                        <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">Pillar III</div>
+                        <h3 style="color: var(--success-color); font-size: 1rem;">Transparency</h3>
+                        <p class="text-muted mt-1" style="font-size: 0.78rem; line-height: 1.5;">Vernacular disclosure of budgets, timelines, and roles</p>
+                    </div>
+                    <div class="glass-card text-center glow-orange" style="padding: 1.5rem 1rem;">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">💬</div>
+                        <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">Pillar IV</div>
+                        <h3 class="neon-text-jh" style="font-size: 1rem;">Feedback</h3>
+                        <p class="text-muted mt-1" style="font-size: 0.78rem; line-height: 1.5;">Institutionalized grievance channels for beneficiaries</p>
+                    </div>
+                    <div class="glass-card text-center glow-purple" style="padding: 1.5rem 1rem;">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">📊</div>
+                        <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">Pillar V</div>
+                        <h3 style="color: #9d4edd; font-size: 1rem;">Impact</h3>
+                        <p class="text-muted mt-1" style="font-size: 0.78rem; line-height: 1.5;">Independent socio-economic audit & betterment metrics</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4 slide-anim">
+                    <a href="phd-research.html" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i> Explore Full Research
+                    </a>
+                    <a href="publications.html" class="btn btn-secondary" style="margin-left: 1rem;">
+                        <i class="fas fa-file-alt"></i> Read the Papers
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- end .slide-container -->
+
+    <!-- Scripts -->
     <script src="../js/theme.js"></script>
-    <script src="../js/slider.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/charts.js"></script>
     <script src="../js/slide-number.js"></script>
-    <script src="../js/popup.js"></script>
     <script src="../js/nav.js"></script>
 </body>
 </html>

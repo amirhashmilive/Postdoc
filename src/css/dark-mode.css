@@ -1,52 +1,32 @@
-/* ── Dark Mode Supplementary Overrides ─── */
-/* These cover cases not handled by CSS custom properties alone */
+/* ── Dark Mode Supplementary Fixes ─── */
 
-[data-theme="dark"] img:not(.no-dim) {
-    filter: brightness(0.92);
-}
+[data-theme="dark"] img:not(.no-dim) { filter: brightness(0.9) saturate(0.95); }
 
-[data-theme="dark"] .popup-formula {
-    background: rgba(255, 255, 255, 0.05);
-}
-
+/* Form inputs dark mode */
 [data-theme="dark"] .form-input,
 [data-theme="dark"] .form-textarea,
-[data-theme="dark"] .form-select {
-    background: rgba(255, 255, 255, 0.03);
-}
-
+[data-theme="dark"] .form-select,
 [data-theme="dark"] .search-input {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255,255,255,0.04);
+    color: var(--text-main);
 }
 
-[data-theme="dark"] .pub-card {
-    background: rgba(255, 255, 255, 0.03);
+/* Scrollbar in dark */
+[data-theme="dark"] ::-webkit-scrollbar { width: 5px; }
+[data-theme="dark"] ::-webkit-scrollbar-track { background: transparent; }
+[data-theme="dark"] ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 4px; }
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.16); }
+
+/* Selection */
+[data-theme="dark"] ::selection { background: rgba(34,211,245,0.25); color: #fff; }
+:root ::selection { background: rgba(0,87,217,0.2); color: #0d0d1a; }
+
+/* Dark nav tooltip */
+[data-theme="dark"] .chap-nav a[data-fullname]::after {
+    background: rgba(14,14,28,0.97);
+    color: #eef0ff;
 }
 
-[data-theme="dark"] ::selection {
-    background: rgba(0, 212, 255, 0.3);
-    color: #fff;
-}
-
-:root ::selection {
-    background: rgba(0, 102, 204, 0.2);
-    color: #1a1a24;
-}
-
-/* Dark mode scrollbar styling (for browsers that show scrollbars) */
-[data-theme="dark"] ::-webkit-scrollbar {
-    width: 6px;
-}
-
-[data-theme="dark"] ::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-[data-theme="dark"] ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 3px;
-}
-
-[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
+/* Code/formula blocks */
+[data-theme="dark"] .popup-formula { background: rgba(255,255,255,0.05); }
+:root .popup-formula { background: rgba(0,0,0,0.05); }
