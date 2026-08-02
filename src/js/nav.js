@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+        if (!href) return;
+        const pageName = href.split('/').pop();
+        if (pageName === currentPath || (currentPath === '' && pageName === 'index.html')) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');

@@ -20,3 +20,7 @@ desktop.ini
 *.tmp
 *.bak
 *.log
+node_modules/
+package.json
+package-lock.json
+
