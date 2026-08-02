@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const subject = document.getElementById('contact-subject')?.value.trim() || 'Portfolio Inquiry';
                 const message = messageInput.value.trim();
 
-                const mailtoUrl = `mailto:sayed.hashmi@ktujmc.ac.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+                const mailtoUrl = `mailto:hashmiamir@live.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
                 
                 window.location.href = mailtoUrl;
 
